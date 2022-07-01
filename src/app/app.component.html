@@ -1,0 +1,566 @@
+<div class="full-container">
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a href="./app.component.html" class="logo">Hi, there!</a>
+      <div class="navbar-buttons">
+        <button type="button" class="button icon-button menu-toggle-button">
+          <i class="bx bx-menu open-icon"></i>
+          <i class="bx bx-x close-icon"></i>
+        </button>
+        <button type="button" class="button icon-button theme-toggle-button">
+          <i class="bx bx-toggle-left theme-off"></i>
+          <i class="bx bx-toggle-right theme-on"></i>
+        </button>
+      </div>
+      <div class="menu">
+        <ul class="list">
+          <li class="list-item">
+            <a href="#about-me" class="list-link"> <span>01</span> About me </a>
+          </li>
+          <li class="list-item">
+            <a href="#portfolio" class="list-link">
+              <span>02</span> Projects
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#experience" class="list-link">
+              <span>03</span> Experiences
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="#contact" class="list-link"> <span>04</span> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="hero section">
+    <div class="container">
+      <ngx-typed-js
+        [strings]="[
+          'a Full Stack Developer.',
+          'Chandru Srinivasan.'
+        ]"
+        [typeSpeed]="70"
+        [backSpeed]="60"
+        [loop]="true"
+      >
+        <h1
+          class="title main-title"
+          [ngsReveal]="{
+            easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+            distance: '50px',
+            duration: 1500,
+            origin: 'top'
+          }"
+        >
+          I Am <span class="typing"></span>
+        </h1>
+      </ngx-typed-js>
+    </div>
+  </section>
+  <section class="about-me section" id="about-me">
+    <div class="container">
+      <div class="section-description d-grid">
+        <div
+          class="scroll-reveal-left"
+          [ngsReveal]="{
+            easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+            distance: '50px',
+            duration: 1500,
+            origin: 'left'
+          }"
+        >
+          <p class="description">
+            Hi I'm <span class="text-bold">Chandru Srinivasan</span>, and in my
+            7 years as a full stack developer I have worked on developing and
+            creating many
+            <span class="text-bold">Intranet Web Applications</span>. I have
+            transformed and created many Enterprise Interactive UI's meeting
+            client's expectations without compromising performance of the
+            overall Application.
+            <span class="text-bold">Current Tech Stack:</span
+            ><span class="text-bold"
+              >Angular, .NET Core Web API, SQL or noSQL, Prime Faces, HTML5 and
+              CSS3 Responsive Web Designing.</span
+            >
+          </p>
+        </div>
+        <div
+          class="scroll-reveal-right"
+          [ngsReveal]="{
+            easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+            distance: '50px',
+            duration: 1500,
+            origin: 'right'
+          }"
+        >
+          <div class="description-image">
+            <img src="assets/images/Chandru_pic.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tech-stack d-grid"
+        [ngsRevealSet]="{
+          easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+          distance: '50px',
+          duration: 1500
+        }"
+        [ngsInterval]="250"
+        [ngsSelector]="'.interval-item'"
+      >
+        <div
+          class="tech-stack-item interval-item"
+          data-tooltip=".NET 6 (Web API)"
+        >
+          <i class="bx bxl-visual-studio"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="Angular">
+          <i class="bx bxl-angular"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="HTML5">
+          <i class="bx bxl-html5"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="CSS3">
+          <i class="bx bxl-css3"></i>
+        </div>
+        <div
+          class="tech-stack-item interval-item"
+          data-tooltip="Bootstrap, Material, PrimeNG"
+        >
+          <i class="bx bxl-bootstrap"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="JS, TS">
+          <i class="bx bxl-javascript"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="SQL, noSQL">
+          <i class="bx bxs-data"></i>
+        </div>
+        <div class="tech-stack-item interval-item" data-tooltip="React">
+          <i class="bx bxl-react"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div
+        class="section-title-container"
+        [ngsRevealSet]="{
+          easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+          distance: '50px',
+          duration: 1500,
+          origin: 'top'
+        }"
+        [ngsInterval]="250"
+        [ngsSelector]="'.interval-item'"
+      >
+        <h2 class="title section-title interval-item">Recent</h2>
+        <div class="section-subtitle-container interval-item">
+          <span class="subtitle-number has-sparkles">02</span>
+          <h5 class="title section-subtitle">Projects</h5>
+        </div>
+      </div>
+      <div
+        class="portfolio-cards d-grid"
+        [ngsRevealSet]="{
+          easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+          distance: '50px',
+          duration: 1500
+        }"
+        [ngsInterval]="500"
+        [ngsSelector]="'.portfolio-interval-item'"
+      >
+        <div class="portfolio-card portfolio-card-1 portfolio-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Proj-1.jpg" alt="" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Project 1</h5>
+            <span class="card-subtitle"
+              >Web App, Frontend and Backend developement</span
+            >
+          </div>
+          <a href="#popup" class="button form-button button-fill"
+            >More Details</a
+          >
+        </div>
+        <div class="portfolio-card portfolio-card-2 portfolio-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Proj-2.jpg" alt="" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Project 2</h5>
+            <span class="card-subtitle"
+              >Web App, Frontend and Backend developement</span
+            >
+          </div>
+          <a href="#popup1" class="button form-button button-fill"
+            >More Details</a
+          >
+        </div>
+        <div class="portfolio-card portfolio-card-3 portfolio-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Proj-3.jpg" alt="" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Project 3</h5>
+            <span class="card-subtitle"
+              >Web App, Frontend and Backend developement</span
+            >
+          </div>
+          <a href="#popup2" class="button form-button button-fill"
+            >More Details</a
+          >
+        </div>
+        <div class="portfolio-card portfolio-card-4 portfolio-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Proj-4.jpg" alt="" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Project 4</h5>
+            <span class="card-subtitle"
+              >Web App, Frontend and Backend developement</span
+            >
+          </div>
+          <a href="#popup3" class="button form-button button-fill"
+            >More Details</a
+          >
+        </div>
+
+        <div class="portfolio-card portfolio-card-5 portfolio-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Proj-5.jpg" alt="" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Project 5</h5>
+            <span class="card-subtitle"
+              >Web App, Frontend and Backend developement</span
+            >
+          </div>
+          <a href="#popup4" class="button form-button button-fill"
+            >More Details</a
+          >
+        </div>
+
+        <!-- <div
+          class="portfolio-card portfolio-card-6 large-button-container portfolio-interval-item"
+        >
+          <a href="" class="large-button button-fill"
+            >View <br />
+            All</a
+          >
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="get-in-touch section" id="experience">
+    <div class="container">
+      <div class="section-title-container">
+        <h2 class="title section-title interval-item">Years Of</h2>
+        <div class="section-subtitle-container interval-item">
+          <span class="subtitle-number has-sparkles">03</span>
+          <h5 class="title section-subtitle">Experience</h5>
+        </div>
+      </div>
+      <div
+        class="exp-container"
+        [ngsRevealSet]="{
+          easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+          distance: '50px',
+          duration: 1500,
+          origin: 'top'
+        }"
+        [ngsInterval]="250"
+        [ngsSelector]="'.exp-interval-item'"
+      >
+        <div class="portfolio-card exp-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Acc.jpg" alt="Acc" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Accenture</h5>
+            <span class="card-subtitle">3.5 years</span>
+          </div>
+        </div>
+        <div class="portfolio-card exp-interval-item">
+          <div class="card-image">
+            <img src="assets/images/Bosch.jpg" alt="Bosch" />
+          </div>
+          <div class="card-heading">
+            <h5 class="card-title">Bosch (BGSW)</h5>
+            <span class="card-subtitle">4 years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="get-in-touch section" id="contact">
+    <div class="container">
+      <div class="section-title-container">
+        <h2 class="title section-title interval-item">Get in</h2>
+        <div class="section-subtitle-container interval-item">
+          <span class="subtitle-number has-sparkles">04</span>
+          <h5 class="title section-subtitle">Touch</h5>
+        </div>
+      </div>
+      <div class="section-description d-grid">
+        <div class="scroll-reveal-left">
+          <p class="description">
+            If <span class="text-bold">You</span>, would like to get in touch
+            please drop me a mail.<br />
+            <span class="text-bold"> Email: chandrusrini95@gmail.com</span
+            ><br />
+            The below mail template is just a static one.<i
+              class="bx bx-smile"
+            ></i
+            ><i class="bx bx-smile"></i><br />
+            Thank You for visiting my small site!
+          </p>
+        </div>
+        <div class="scroll-reveal-right">
+          <div class="description-image">
+            <img src="assets/images/Chandru_pic.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="form-container"
+        [ngsRevealSet]="{
+          easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+          distance: '50px',
+          duration: 1500,
+          origin: 'top'
+        }"
+        [ngsInterval]="250"
+        [ngsSelector]="'.form-interval-item'"
+      >
+        <form action="" class="contact-form form-interval-item">
+          <div class="imput-group">
+            <div class="input">
+              <input type="text" id="name" required />
+              <label for="name" class="input-label"
+                >Name <span class="required-field">*</span></label
+              >
+            </div>
+            <div class="input">
+              <input type="text" id="email" required />
+              <label for="email" class="input-label"
+                >Email <span class="required-field">*</span></label
+              >
+            </div>
+          </div>
+          <div class="input">
+            <input type="text" id="message" required />
+            <label for="message" class="input-label"
+              >Message <span class="required-field">*</span></label
+            >
+          </div>
+          <button type="button" class="button form-button button-fill">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer
+    class="footer"
+    [ngsRevealSet]="{
+      easing: 'cubic-bezier(0.68,-0.55, 0.265, 1.55)',
+      distance: '50px',
+      duration: 1500,
+      origin: 'top'
+    }"
+    [ngsInterval]="250"
+    [ngsSelector]="'.footer-interval-item'"
+  >
+    <div class="footer-container container footer-interval-item">
+      <div class="social-media">
+        <ul class="list">
+          <li class="list-item">
+            <a
+              href="https://www.linkedin.com/in/chandru-srinivasan-61243a199/"
+              target="_blank"
+              class="list-link"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span>&copy; 2022 Chandru. All rights reserved.</span>
+      <a href="#home" class="scroll-top">
+        <i class="bx bx-chevron-up"></i> Up
+      </a>
+    </div>
+  </footer>
+</div>
+
+<div class="popup" id="popup">
+  <div class="popup__content">
+    <div class="popup__left">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Tech Stack</h5>
+      <div class="card__details">
+        <ul>
+          <li>Web API (.NET 6)</li>
+          <li>Angular 13, TS</li>
+          <li>HTML5, CSS3</li>
+          <li>PrimeNG UI Component</li>
+          <li>SQL</li>
+          <li>Windows 2016 server, IIS Hosting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup__right">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Project 1</h5>
+      <p class="card-subtitle">
+        Project 1 is an integrated framework of few applications/tools.<br />
+        WebAPI's are consumed from various applications/tools and data is
+        projected through an Angular Web App.<br />
+        .NET 6 acts as a bridge for connecting various applications/tools
+        securely.<br />
+        PrimeNG UI component is used to develop an Enterprise level UI.<br />
+        Code first approach is followed and SQL database is used to store
+        data.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup1">
+  <div class="popup__content">
+    <div class="popup__left">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Tech Stack</h5>
+      <div class="card__details">
+        <ul>
+          <li>Web API (.NET 6)</li>
+          <li>Angular 13, TS</li>
+          <li>HTML5, CSS3</li>
+          <li>PrimeNG UI Component</li>
+          <li>SQL DB</li>
+          <li>Windows 2016 server, IIS Hosting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup__right">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Project 2</h5>
+      <p class="card-subtitle">
+        Project 2 is an Angular Web App.<br />
+        The project has its own SQL database.<br />
+        .NET 5 (.NET Core Web API) is used as backend to create the API's to be
+        consumed by frontend.<br />
+        PrimeNG UI is used to produe the UI components.<br />
+        The project deals with Risk Management throughout an entire department
+        spanning a lot of end users.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup2">
+  <div class="popup__content">
+    <div class="popup__left">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Tech Stack</h5>
+      <div class="card__details">
+        <ul>
+          <li>ASP.NET MVC</li>
+          <li>JS</li>
+          <li>HTML5, CSS3</li>
+          <li>Telerik UI, Kendo Grid</li>
+          <li>ORACLE DB</li>
+          <li>Windows 2016 server, IIS Hosting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup__right">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Project 3</h5>
+      <p class="card-subtitle">
+        Project 3 is an ASP.NET MVC Web App that uses Telerik UI.<br />
+        Telerik UI is a third party UI component used to provide user friendly
+        UI components. <br />
+        The Telerik Grid for ASP.NET MVC is a powerful data visualization and
+        editing component, that exposes a plethora of functionalities and events
+        that could be combined altogether.<br />
+        The project deals with reviews of certain tools/ software involving
+        multiple users (automobile industries).<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup3">
+  <div class="popup__content">
+    <div class="popup__left">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Tech Stack</h5>
+      <div class="card__details">
+        <ul>
+          <li>Web API (.NET 5)</li>
+          <li>Angular 13, TS</li>
+          <li>HTML5, CSS3</li>
+          <li>PrimeNG UI Component</li>
+          <li>SQL</li>
+          <li>Windows 2016 server, IIS Hosting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup__right">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Project 4</h5>
+      <p class="card-subtitle">
+        Project 4 is an Angular Web App.<br />
+        .NET 5 (.NET Core Web API) is used as backend to create the API's to be consumed by
+        frontend.<br />
+        Code first approach and SQL database is used.<br />
+        PrimeNG UI component is used to develop the UI. Chart.js is effectively used for data visualization.<br />
+        The project deals software developement details across various
+        departments.<br />
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="popup4">
+  <div class="popup__content">
+    <div class="popup__left">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Tech Stack</h5>
+      <div class="card__details">
+        <ul>
+          <li>Web API (.NET 5)</li>
+          <li>Angular 13, TS</li>
+          <li>HTML5, CSS3</li>
+          <li>PrimeNG UI Component</li>
+          <li>SQL</li>
+          <li>Windows 2016 server, IIS Hosting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup__right">
+      <a href="#section-tours" class="popup__close">&times;</a>
+      <h5 class="card-title">Project 5</h5>
+      <p class="card-subtitle">
+        Project 5 is an Angular Web App.<br />
+        .NET 5 (.NET Core Web API) is used as backend to create the API's to be consumed by
+        frontend.<br />
+        Code first approach and SQL database is used.<br />
+        PrimeNG UI component is used to develop the UI.<br />
+        The project deals software releases across various departments.<br />
+      </p>
+    </div>
+  </div>
+</div>
